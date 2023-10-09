@@ -1,0 +1,109 @@
+\hypertarget{class_file_manager}{}\doxysection{File\+Manager Class Reference}
+\label{class_file_manager}\index{FileManager@{FileManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Graph \mbox{\hyperlink{class_file_manager_a9986f91cb38208ff63c813e806c79296}{read\+Real\+World\+Nodes}} (string file, Graph g)
+\item 
+Graph \mbox{\hyperlink{class_file_manager_ae2a7f582069396ce3724141cf5f75c37}{read\+Real\+World\+Edges}} (string file, Graph g)
+\item 
+Graph \mbox{\hyperlink{class_file_manager_ae060b61f7af22ffd1ac7cb32662dc64e}{read\+Small\+Graph}} (string file, Graph g)
+\item 
+Graph \mbox{\hyperlink{class_file_manager_aabcea206b6b5f4b238a60822a7a4cb4d}{read\+Small\+Graph3}} (Graph g)
+\item 
+Graph \mbox{\hyperlink{class_file_manager_aa4912d367b3279269ac7b96392542d32}{read\+Extra\+Fully\+Connected\+Graph}} (string file, Graph g)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file_manager_aa4912d367b3279269ac7b96392542d32}\label{class_file_manager_aa4912d367b3279269ac7b96392542d32}} 
+\index{FileManager@{FileManager}!readExtraFullyConnectedGraph@{readExtraFullyConnectedGraph}}
+\index{readExtraFullyConnectedGraph@{readExtraFullyConnectedGraph}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{readExtraFullyConnectedGraph()}{readExtraFullyConnectedGraph()}}
+{\footnotesize\ttfamily Graph File\+Manager\+::read\+Extra\+Fully\+Connected\+Graph (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{Graph}]{g }\end{DoxyParamCaption})}
+
+Abre um file com as edges de um grafo Extra Fully Connected. ~\newline
+Time Complexity\+: O(n1$\ast$\+V); \mbox{[}n1 = número de edges a serem lidas\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em file} & Uma \char`\"{}string\char`\"{} que corresponde ao nome do ficheiro de edges. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo a utilizar na programa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_file_manager_ae2a7f582069396ce3724141cf5f75c37}\label{class_file_manager_ae2a7f582069396ce3724141cf5f75c37}} 
+\index{FileManager@{FileManager}!readRealWorldEdges@{readRealWorldEdges}}
+\index{readRealWorldEdges@{readRealWorldEdges}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{readRealWorldEdges()}{readRealWorldEdges()}}
+{\footnotesize\ttfamily Graph File\+Manager\+::read\+Real\+World\+Edges (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{Graph}]{g }\end{DoxyParamCaption})}
+
+Abre um file com as edges de um grafo. ~\newline
+Time Complexity\+: O(n2$\ast$\+V); \mbox{[}n2 = número de edges a serem lidas\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em file} & Uma \char`\"{}string\char`\"{} que corresponde ao nome do diretório com o grafo. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo a utilizar na programa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_file_manager_a9986f91cb38208ff63c813e806c79296}\label{class_file_manager_a9986f91cb38208ff63c813e806c79296}} 
+\index{FileManager@{FileManager}!readRealWorldNodes@{readRealWorldNodes}}
+\index{readRealWorldNodes@{readRealWorldNodes}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{readRealWorldNodes()}{readRealWorldNodes()}}
+{\footnotesize\ttfamily Graph File\+Manager\+::read\+Real\+World\+Nodes (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{Graph}]{g }\end{DoxyParamCaption})}
+
+Abre um file com os nodes de um grafo. ~\newline
+Time Complexity\+: O(n1$\ast$\+V); \mbox{[}n1 = número de nodes a serem lidas\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em file} & Uma \char`\"{}string\char`\"{} que corresponde ao nome do diretório com o grafo. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo a utilizar na programa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_file_manager_ae060b61f7af22ffd1ac7cb32662dc64e}\label{class_file_manager_ae060b61f7af22ffd1ac7cb32662dc64e}} 
+\index{FileManager@{FileManager}!readSmallGraph@{readSmallGraph}}
+\index{readSmallGraph@{readSmallGraph}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{readSmallGraph()}{readSmallGraph()}}
+{\footnotesize\ttfamily Graph File\+Manager\+::read\+Small\+Graph (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{Graph}]{g }\end{DoxyParamCaption})}
+
+Abre um file com os edges dos grafos mais curtos. ~\newline
+Time Complexity\+: O(n1$\ast$\+V); \mbox{[}n1 = número de edges a serem lidos\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em file} & Uma \char`\"{}string\char`\"{} que corresponde ao nome do ficheiro onde estão as edges. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo a utilizar na programa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_file_manager_aabcea206b6b5f4b238a60822a7a4cb4d}\label{class_file_manager_aabcea206b6b5f4b238a60822a7a4cb4d}} 
+\index{FileManager@{FileManager}!readSmallGraph3@{readSmallGraph3}}
+\index{readSmallGraph3@{readSmallGraph3}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{readSmallGraph3()}{readSmallGraph3()}}
+{\footnotesize\ttfamily Graph File\+Manager\+::read\+Small\+Graph3 (\begin{DoxyParamCaption}\item[{Graph}]{g }\end{DoxyParamCaption})}
+
+Abre um file com os edges do grafo mais curto \char`\"{}tourism.\+csv\char`\"{}. ~\newline
+Time Complexity\+: O(n1$\ast$\+V); \mbox{[}n1 = número de edges a serem lidas\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em file} & Uma \char`\"{}string\char`\"{} que corresponde ao nome do ficheiro de egdes. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo a utilizar na programa. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+DA2\+\_\+project/\+DA\+\_\+\+Project2/File\+Manager.\+h\item 
+C\+:/\+DA2\+\_\+project/\+DA\+\_\+\+Project2/File\+Manager.\+cpp\end{DoxyCompactItemize}

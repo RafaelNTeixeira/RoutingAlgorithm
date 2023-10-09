@@ -1,0 +1,40 @@
+\hypertarget{_algorithms_8h_source}{}\doxysection{C\+:/\+DA2\+\_\+project/\+DA\+\_\+\+Project2/\+Algorithms.h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DA\_TRABALHO\_2\_ALGORITHMS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DA\_TRABALHO\_2\_ALGORITHMS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}data\_structures/Graph.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithms}{Algorithms}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithms_ac10ba24fd8cc127e3fff9f2e64b3f699}{TriangularApproximation}}(Vertex*\ source,\ Graph\ g);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithms_a72721d8cfe7d3304b8acd4e5b78fa2f7}{NearestNeighbor}}(Vertex*\ source,\ Graph\ g);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithms_a2b7d10a7adced66f934aa58f1cdcbdd0}{PathDfs}}(Vertex*\ source,\ Graph\ g,\ vector<int>\ \&path);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_s_p_solver}{TSPSolver}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_t_s_p_solver}{TSPSolver}}(\textcolor{keyword}{const}\ Graph\&\ g)\ :\ graph(g),\ bestCost(std::numeric\_limits<double>::max())\ \{\}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_s_p_solver_a0da27f0c88a5cc24af8c183caac2d58e}{solve}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ vector<int>\ bestPath;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ bestCost;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ Graph\ graph;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ backtrack(vector<int>\&\ path,\ \textcolor{keywordtype}{double}\ cost);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ calculateEdgeCost(\textcolor{keywordtype}{int}\ source,\ \textcolor{keywordtype}{int}\ destination)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

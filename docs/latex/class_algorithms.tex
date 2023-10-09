@@ -1,0 +1,64 @@
+\hypertarget{class_algorithms}{}\doxysection{Algorithms Class Reference}
+\label{class_algorithms}\index{Algorithms@{Algorithms}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithms_ac10ba24fd8cc127e3fff9f2e64b3f699}{Triangular\+Approximation}} (Vertex $\ast$source, Graph g)
+\item 
+void \mbox{\hyperlink{class_algorithms_a72721d8cfe7d3304b8acd4e5b78fa2f7}{Nearest\+Neighbor}} (Vertex $\ast$source, Graph g)
+\item 
+void \mbox{\hyperlink{class_algorithms_a2b7d10a7adced66f934aa58f1cdcbdd0}{Path\+Dfs}} (Vertex $\ast$source, Graph g, vector$<$ int $>$ \&path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_algorithms_a72721d8cfe7d3304b8acd4e5b78fa2f7}\label{class_algorithms_a72721d8cfe7d3304b8acd4e5b78fa2f7}} 
+\index{Algorithms@{Algorithms}!NearestNeighbor@{NearestNeighbor}}
+\index{NearestNeighbor@{NearestNeighbor}!Algorithms@{Algorithms}}
+\doxysubsubsection{\texorpdfstring{NearestNeighbor()}{NearestNeighbor()}}
+{\footnotesize\ttfamily void Algorithms\+::\+Nearest\+Neighbor (\begin{DoxyParamCaption}\item[{Vertex $\ast$}]{source,  }\item[{Graph}]{g }\end{DoxyParamCaption})}
+
+Escolhe sempre o caminho com o menor custo possível. ~\newline
+Time Complexity\+: O(\+V$\ast$\+E) 
+\begin{DoxyParams}{Parameters}
+{\em source} & Um pointer para o vértice source. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_algorithms_a2b7d10a7adced66f934aa58f1cdcbdd0}\label{class_algorithms_a2b7d10a7adced66f934aa58f1cdcbdd0}} 
+\index{Algorithms@{Algorithms}!PathDfs@{PathDfs}}
+\index{PathDfs@{PathDfs}!Algorithms@{Algorithms}}
+\doxysubsubsection{\texorpdfstring{PathDfs()}{PathDfs()}}
+{\footnotesize\ttfamily void Algorithms\+::\+Path\+Dfs (\begin{DoxyParamCaption}\item[{Vertex $\ast$}]{source,  }\item[{Graph}]{g,  }\item[{vector$<$ int $>$ \&}]{path }\end{DoxyParamCaption})}
+
+O algoritmo começa pelo node selecionado e guarda o caminho cujos edges estão selecionados. ~\newline
+Time Complexity\+: O(V + E) 
+\begin{DoxyParams}{Parameters}
+{\em source} & Um pointer para o vértice source. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+{\em path} & A referência para um vetor de int\textquotesingle{}s que corresponde a um caminho \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_algorithms_ac10ba24fd8cc127e3fff9f2e64b3f699}\label{class_algorithms_ac10ba24fd8cc127e3fff9f2e64b3f699}} 
+\index{Algorithms@{Algorithms}!TriangularApproximation@{TriangularApproximation}}
+\index{TriangularApproximation@{TriangularApproximation}!Algorithms@{Algorithms}}
+\doxysubsubsection{\texorpdfstring{TriangularApproximation()}{TriangularApproximation()}}
+{\footnotesize\ttfamily void Algorithms\+::\+Triangular\+Approximation (\begin{DoxyParamCaption}\item[{Vertex $\ast$}]{source,  }\item[{Graph}]{g }\end{DoxyParamCaption})}
+
+A partir de um node source, determina a MST do grafo e com ela calcula o menor caminho possível. ~\newline
+Time Complexity\+: O(V + E) 
+\begin{DoxyParams}{Parameters}
+{\em source} & Um pointer para o vértice source. \\
+\hline
+{\em g} & Um grafo. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+DA2\+\_\+project/\+DA\+\_\+\+Project2/Algorithms.\+h\item 
+C\+:/\+DA2\+\_\+project/\+DA\+\_\+\+Project2/Algorithms.\+cpp\end{DoxyCompactItemize}
